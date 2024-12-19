@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Fantacy</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body class="fade-in">
+    <header>
+        <nav>
+            <div class="logo">
+                <span style="font-size: 24px; color: #ecf0f1; margin-left: 10px;">Fantacy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="html.html#home">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cart">
+        <h2>Your Shopping Cart</h2>
+        <div class="cart-content">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Tax: <span id="tax">$0.00</span></p>
+                <p>Discount: <span id="discount">$0.00</span></p>
+                <p>Total: <span id="total">$0.00</span></p>
+                <label for="discount-code">Discount Code:</label>
+                <input type="text" id="discount-code" placeholder="Enter discount code">
+                <button id="apply-discount">Apply Discount</button>
+                <button class="checkout-button" id="proceed-to-checkout">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Fantacy is your one-stop shop for the latest and greatest products. We offer a wide range of items at unbeatable prices.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="html.html#home">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: support@fantacy.com</p>
+                <p>Phone: +233 (0) 500613900</p>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Fantacy. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="calculations.js"></script>
+</body>
+</html>
